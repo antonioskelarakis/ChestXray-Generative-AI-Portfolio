@@ -1,2 +1,6 @@
 # ChestXray-Generative-AI-Portfolio
 Generative Synthesis of Chest Radiographs using DCGAN and WGAN-GP on ChestMNIST. This project evaluates architectural refinements—including resize-convolution and spectral normalization—to eliminate artifacts and improve anatomical fidelity, with a secondary focus on Green AI by monitoring carbon emissions and energy efficiency via CodeCarbon
+ Project Overview
+ This repository contains the experimental framework for synthesizing high-fidelity chest X-rays using the ChestMNIST dataset. The project follows a three-stage evolution:Baseline DCGAN: Identifying structural instabilities and checkerboard artifacts.Refined DCGAN: Addressing aliasing via Resize-Convolution and Spectral Normalization.WGAN-GP: Implementing Wasserstein Loss with Gradient Penalty for superior mathematical stability and structural coherence.
+ Key ResultsArtifact Removal: Successfully eliminated grid-like distortions from early models.Environmental Impact: Tracked real-time carbon emissions, demonstrating a sustainability penalty for advanced mathematical models.Fidelity: Produced 64x 64 synthetic radiographs with clear cardiomediastinal silhouettes and costophrenic angles.
+ Sustainability Tracking (Green AI)We utilized CodeCarbon to monitor the environmental footprint of each training cycle.Refined DCGAN: 0.0086 g.CO2eq/sWGAN-GP: 0.0154 g.CO2eq/s
